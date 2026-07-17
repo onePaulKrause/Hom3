@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1460" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+  <defs>
+    <style>
+      text { paint-order: stroke; stroke: #FFFFFF; stroke-width: 3.6px; stroke-linejoin: round; }
+    </style>
+    <path id="s4" d="M0,-1 L0.26,-0.26 L1,0 L0.26,0.26 L0,1 L-0.26,0.26 L-1,0 L-0.26,-0.26 Z"/>
+    <marker id="mk" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,1 L7,4 L0,7 Z" fill="#7C8AA5"/>
+    </marker>
+  </defs>
+
+  <rect width="1180" height="1460" fill="#FFFFFF"/>
+
+  <text x="590" y="88" text-anchor="middle" font-family="'Iowan Old Style',Palatino,Georgia,serif" font-size="42" letter-spacing="8" fill="#1E2B45">HOM3</text>
+  <text x="590" y="126" text-anchor="middle" font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic" font-size="21" fill="#1E2B45">The Chain Constellation</text>
+  <text x="590" y="152" text-anchor="middle" font-size="10.5" fill="#7C8AA5">keys → chains → witnesses → mesh → rails · 2026</text>
+
+  <!-- ============ chart plate frame ============ -->
+  <rect x="40" y="190" width="1100" height="1078" fill="none" stroke="#1E2B45" stroke-width="1"/>
+  <rect x="46" y="196" width="1088" height="1066" fill="none" stroke="#E9EDF4" stroke-width="1"/>
+
+  <!-- faint celestial grid -->
+  <g fill="none" stroke="#E9EDF4" stroke-width="1">
+    <path d="M60,340 Q590,220 1120,340"/>
+    <path d="M60,760 Q590,700 1120,760"/>
+    <path d="M60,1120 Q590,1210 1120,1120"/>
+  </g>
+
+  <!-- background micro-stars -->
+  <g fill="#7C8AA5" opacity=".45">
+    <circle cx="120" cy="250" r="1.1"/><circle cx="215" cy="330" r=".9"/><circle cx="500" cy="240" r="1"/>
+    <circle cx="700" cy="245" r=".9"/><circle cx="1010" cy="255" r="1.1"/><circle cx="1090" cy="330" r=".9"/>
+    <circle cx="90" cy="560" r="1"/><circle cx="140" cy="700" r=".9"/><circle cx="1105" cy="700" r="1"/>
+    <circle cx="480" cy="410" r=".9"/><circle cx="720" cy="400" r=".9"/><circle cx="470" cy="760" r=".9"/>
+    <circle cx="740" cy="905" r=".9"/><circle cx="250" cy="905" r=".9"/><circle cx="930" cy="920" r=".9"/>
+    <circle cx="120" cy="1180" r="1"/><circle cx="740" cy="1085" r=".9"/><circle cx="1010" cy="1230" r="1"/>
+    <circle cx="300" cy="418" r=".9"/><circle cx="905" cy="415" r=".9"/><circle cx="590" cy="905" r=".9"/>
+  </g>
+  <g fill="#C29A2B" opacity=".6">
+    <use href="#s4" transform="translate(160,420) scale(3)"/>
+    <use href="#s4" transform="translate(1035,760) scale(3)"/>
+    <use href="#s4" transform="translate(80,960) scale(3)"/>
+    <use href="#s4" transform="translate(520,1090) scale(2.6)"/>
+  </g>
+
+  <!-- ============ EDGES ============ -->
+  <!-- key derivation (solid 1.4, ink) -->
+  <g stroke="#1E2B45" stroke-width="1.4" fill="none">
+    <path d="M316,320 L568,633"/>
+    <path d="M863,321 L612,633"/>
+    <path d="M287,317 L180,452"/>
+    <path d="M897,316 L1010,382"/>
+  </g>
+  <!-- delegate + emit edges (solid 1, ink) -->
+  <g stroke="#1E2B45" stroke-width="1" fill="none">
+    <path d="M186,478 L558,652"/>
+    <path d="M312,564 L566,646"/>
+    <path d="M268,687 L560,664"/>
+    <path d="M341,802 L566,680"/>
+    <path d="M868,564 L614,646"/>
+    <path d="M912,687 L620,664"/>
+    <path d="M839,802 L614,680"/>
+    <path d="M560,678 L180,1042"/>
+    <path d="M862,818 L1046,872"/>
+  </g>
+  <!-- witness / anchor edges (gold dashed) -->
+  <g stroke="#C29A2B" stroke-width="1.3" stroke-dasharray="5 3" fill="none">
+    <path d="M590,634 L590,296"/>
+    <path d="M590,692 L590,1012"/>
+    <path d="M607,686 L819,963"/>
+  </g>
+  <!-- witness ring arc -->
+  <ellipse cx="590" cy="660" rx="445" ry="380" fill="none" stroke="#C29A2B" stroke-width="1" stroke-dasharray="1 5"/>
+  <!-- hom3sync replication (ink short-dash) -->
+  <g stroke="#1E2B45" stroke-width="1" stroke-dasharray="2 3" fill="none">
+    <path d="M616,648 L992,522"/>
+    <path d="M1000,395 L1090,435 L1095,510 L1050,570 L1005,480 L1000,395"/>
+    <path d="M1005,480 L1095,510"/>
+  </g>
+  <!-- never-custody fence -->
+  <line x1="90" y1="1130" x2="1090" y2="1130" stroke="#C0563B" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <!-- same-chain connector: anchor pierces the fence -->
+  <path d="M581,1052 L387,1183" stroke="#C29A2B" stroke-width="1" stroke-dasharray="1 4" fill="none"/>
+  <!-- witnessed back (dotted, returns above the fence) -->
+  <path d="M900,1168 C1108,1120 1122,840 650,690" stroke="#7C8AA5" stroke-width="1.1" stroke-dasharray="1 4" fill="none" marker-end="url(#mk)"/>
+  <!-- proofs outward -->
+  <path d="M146,1060 L84,1060" stroke="#1E2B45" stroke-width="1" fill="none" marker-end="url(#mk)"/>
+
+  <!-- ============ EDGE LABELS (tiny mono, slate) ============ -->
+  <g font-size="9" fill="#7C8AA5">
+    <text x="392" y="462">BIP32 / SLIP-0010</text>
+    <text x="742" y="452">feeds · app subkeys</text>
+    <text x="955" y="352">device keys</text>
+    <text x="96" y="386">m/HOME'/·/2'</text>
+    <text x="242" y="508">delegate/v1</text>
+    <text x="408" y="588">charchain/v1</text>
+    <text x="376" y="662">voyage_seal/v1 · merkle</text>
+    <text x="416" y="758">legacy/v1</text>
+    <text x="668" y="592">home_binding/v1</text>
+    <text x="700" y="647">library_artifact/v1 · CAS</text>
+    <text x="700" y="758">message/v1</text>
+    <text x="884" y="838">signed envelopes</text>
+    <text x="284" y="884">proof_export/v1 · ship/v1</text>
+    <text x="600" y="470">celestial_witness/v1</text>
+    <text x="600" y="862">anchor/v1 · OTS → 4 calendars</text>
+    <text x="694" y="848">mesh_witness/v1 · LoRa</text>
+    <text x="778" y="560">hom3sync/1 feeds</text>
+    <text x="428" y="1114">same chain</text>
+  </g>
+  <text x="1104" y="880" font-size="9" fill="#7C8AA5" transform="rotate(90 1104 880)">witnessed back · wallet/v1 · paul/v1 · trade/v1</text>
+
+  <!-- ============ NODES ============ -->
+  <!-- seeds -->
+  <g fill="#C29A2B" stroke="#1E2B45" stroke-width=".6">
+    <use href="#s4" transform="translate(300,300) scale(11)"/>
+    <use href="#s4" transform="translate(880,300) scale(11)"/>
+    <use href="#s4" transform="translate(170,470) scale(8)"/>
+  </g>
+  <g font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic" fill="#1E2B45">
+    <text x="300" y="278" text-anchor="middle" font-size="14">Master Seed</text>
+    <text x="880" y="278" text-anchor="middle" font-size="14">hom3sync Seed</text>
+    <text x="170" y="500" text-anchor="middle" font-size="13">First Mate</text>
+  </g>
+  <g font-size="8.5" fill="#7C8AA5" text-anchor="middle">
+    <text x="300" y="330">BIP39 · Shamir 3-of-5</text>
+    <text x="880" y="330">HKDF-SHA256</text>
+  </g>
+
+  <!-- THE LOGBOOK (central star) -->
+  <g fill="#C29A2B" stroke="#1E2B45" stroke-width=".7">
+    <use href="#s4" transform="translate(590,660) scale(26)"/>
+    <use href="#s4" transform="translate(590,660) scale(26) rotate(45)"/>
+  </g>
+  <circle cx="590" cy="660" r="4" fill="#1E2B45"/>
+  <text x="590" y="618" text-anchor="middle" font-family="'Iowan Old Style',Palatino,Georgia,serif" font-size="17" fill="#1E2B45">THE LOGBOOK</text>
+  <text x="590" y="712" text-anchor="middle" font-size="9" fill="#7C8AA5">per-signer Ed25519 chains · prev_hash = SHA-256</text>
+
+  <!-- domain stars -->
+  <g fill="#C29A2B" stroke="#1E2B45" stroke-width=".6">
+    <use href="#s4" transform="translate(300,560) scale(9)"/>
+    <use href="#s4" transform="translate(255,690) scale(9)"/>
+    <use href="#s4" transform="translate(330,810) scale(9)"/>
+    <use href="#s4" transform="translate(880,560) scale(9)"/>
+    <use href="#s4" transform="translate(925,690) scale(9)"/>
+    <use href="#s4" transform="translate(850,810) scale(9)"/>
+    <use href="#s4" transform="translate(170,1055) scale(9)"/>
+    <use href="#s4" transform="translate(1060,880) scale(7)"/>
+  </g>
+  <g font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic" font-size="13" fill="#1E2B45">
+    <text x="300" y="542" text-anchor="middle">Charchain</text>
+    <text x="243" y="694" text-anchor="end">Helm</text>
+    <text x="330" y="838" text-anchor="middle">Legacy</text>
+    <text x="880" y="542" text-anchor="middle">home://</text>
+    <text x="937" y="694" text-anchor="start">Library</text>
+    <text x="850" y="838" text-anchor="middle">Comms</text>
+    <text x="170" y="1032" text-anchor="middle">Proofs Out</text>
+    <text x="1060" y="905" text-anchor="middle" font-size="12">peer Homes</text>
+  </g>
+  <text x="170" y="1080" text-anchor="middle" font-size="8.5" fill="#7C8AA5">self-verifying zips</text>
+
+  <!-- witness stars -->
+  <g fill="#C29A2B" stroke="#1E2B45" stroke-width=".7">
+    <use href="#s4" transform="translate(590,280) scale(12)"/>
+    <use href="#s4" transform="translate(590,280) scale(12) rotate(45)"/>
+    <use href="#s4" transform="translate(590,1040) scale(14)"/>
+    <use href="#s4" transform="translate(590,1040) scale(14) rotate(45)"/>
+    <use href="#s4" transform="translate(830,980) scale(12)"/>
+    <use href="#s4" transform="translate(830,980) scale(12) rotate(45)"/>
+  </g>
+  <g font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic" font-size="13.5" fill="#1E2B45" text-anchor="middle">
+    <text x="590" y="262">the Sky</text>
+    <text x="590" y="1076">Bitcoin</text>
+    <text x="830" y="1012">the Radio</text>
+  </g>
+  <text x="590" y="1104" text-anchor="middle" font-size="9" letter-spacing="2" fill="#C29A2B">WITNESS RING — VERIFICATION SURVIVES THE ISSUER</text>
+
+  <!-- hom3sync device cluster -->
+  <g fill="#1E2B45">
+    <circle cx="1000" cy="395" r="3.4"/>
+    <circle cx="1090" cy="435" r="3.4"/>
+    <circle cx="1095" cy="510" r="3.4"/>
+    <circle cx="1005" cy="480" r="3.4"/>
+  </g>
+  <circle cx="1050" cy="570" r="3.6" fill="#FFFFFF" stroke="#1E2B45" stroke-width="1.2"/>
+  <g font-size="9" fill="#1E2B45">
+    <text x="992" y="390" text-anchor="end">operator box</text>
+    <text x="1098" y="431" text-anchor="start">node</text>
+    <text x="1103" y="514" text-anchor="start">peer</text>
+    <text x="996" y="484" text-anchor="end">peer</text>
+    <text x="1050" y="590" text-anchor="middle">mobile · read-only</text>
+  </g>
+  <text x="1052" y="620" text-anchor="middle" font-size="8.5" fill="#7C8AA5">bundles · pull · tor</text>
+  <text x="1052" y="636" text-anchor="middle" font-size="8.5" fill="#7C8AA5">forks quarantined</text>
+
+  <!-- fence caption -->
+  <text x="590" y="1148" text-anchor="middle" font-size="9.5" letter-spacing="2" fill="#C0563B">NEVER-CUSTODY — NO FUND KEY ON THE BOX</text>
+
+  <!-- external rails (ink stars, below fence) -->
+  <g fill="#FFFFFF" stroke="#1E2B45" stroke-width="1.1">
+    <use href="#s4" transform="translate(370,1195) scale(8)"/>
+    <use href="#s4" transform="translate(630,1200) scale(8)"/>
+    <use href="#s4" transform="translate(880,1195) scale(8)"/>
+  </g>
+  <g font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic" font-size="12.5" fill="#1E2B45" text-anchor="middle">
+    <text x="370" y="1222">Bitcoin rail</text>
+    <text x="630" y="1227">EVM</text>
+    <text x="880" y="1222">Polymarket</text>
+  </g>
+  <g font-size="8.5" fill="#7C8AA5" text-anchor="middle">
+    <text x="370" y="1238">neutrino watch-only · PSBT → ext signer</text>
+    <text x="630" y="1243">read-only RPC · Arb/Base/Main</text>
+    <text x="880" y="1238">CLOB · PIN-gated</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g stroke-width="1.4" fill="none">
+    <line x1="70" y1="1300" x2="130" y2="1300" stroke="#1E2B45"/>
+    <line x1="70" y1="1324" x2="130" y2="1324" stroke="#1E2B45" stroke-width="1"/>
+    <line x1="70" y1="1348" x2="130" y2="1348" stroke="#C29A2B" stroke-width="1.3" stroke-dasharray="5 3"/>
+    <line x1="330" y1="1300" x2="390" y2="1300" stroke="#1E2B45" stroke-width="1" stroke-dasharray="2 3"/>
+    <line x1="330" y1="1324" x2="390" y2="1324" stroke="#C0563B" stroke-width="1.5" stroke-dasharray="8 5"/>
+    <line x1="330" y1="1348" x2="390" y2="1348" stroke="#7C8AA5" stroke-width="1.1" stroke-dasharray="1 4"/>
+  </g>
+  <g font-size="9.5" fill="#1E2B45">
+    <text x="140" y="1303">key derivation</text>
+    <text x="140" y="1327">emits to the Logbook</text>
+    <text x="140" y="1351">anchors / witnesses</text>
+    <text x="400" y="1303">hom3sync replication</text>
+    <text x="400" y="1327">never-custody fence</text>
+    <text x="400" y="1351">witnessed back</text>
+  </g>
+  <g font-size="9.5" fill="#7C8AA5">
+    <text x="620" y="1303">Ed25519 · SHA-256 · Merkle (dup-last) · X25519+HKDF · XChaCha20-Poly1305</text>
+    <text x="620" y="1327">AES-256-GCM · Argon2id · Shamir 3-of-5 · BIP32/SLIP-0010 · BIP158 · BIP174</text>
+    <text x="620" y="1351">RFC 8785 subset canonical bytes · domain-separated signatures</text>
+  </g>
+
+  <text x="590" y="1408" text-anchor="middle" font-size="11" fill="#1E2B45" font-family="'Iowan Old Style',Palatino,Georgia,serif" font-style="italic">tamper-evident, not tamper-proof · Soli Deo Gloria</text>
+  <text x="590" y="1430" text-anchor="middle" font-size="9" fill="#7C8AA5">HOM3 Technologies LLC · patent pending · hom3.org</text>
+</svg>
