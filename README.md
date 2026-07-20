@@ -23,7 +23,7 @@ HOM3 Technologies builds software, hardware, and an operating system for people 
 |---|---|---|
 | **HOM3** | Local-first AI workspace — macOS · Windows · Linux | Shipping — [hom3.org](https://hom3.org) |
 | **HOM3 Deck** | Handheld sovereign terminal (RK3588) | Crowd Supply, upcoming — [hom3.org/deck](https://hom3.org/deck) |
-| **HOM3os** | Purpose-built OS for HOM3 hardware | In development — source release to follow |
+| **HOM3os** | Purpose-built OS for HOM3 hardware | released Boot-Init MIT — [OS Github](https://github.com/onePaulKrause/hom3init) |
 | **identitytrusts** | Provenance & watermarking primitives — Ed25519 · SHA-256 · DCT/QIM | [identitytrusts.org](https://identitytrusts.org) |
 | **LVL5** | Falling blocks in five dimensions. Because we could. | [lvl5.hom3.org](https://lvl5.hom3.org) |
 
