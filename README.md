@@ -30,17 +30,21 @@ HOM3 Technologies builds software, hardware, and an operating system for people 
 ## Verify
 
 Current release — HOM3 v2
+```
 Artifact	SHA-256
 `hom3v2official.zip`	`9bc295b368ac75dbd5f5594def6af28160743a43921b2ce84a55ddde82b7e821`
+```
 One file, every platform — Windows · macOS · Linux. Windows and Linux install
 fully offline; macOS fetches its vendored wheels once on first install.
 Mirrored at hom3.org/sha — the artifact and its hash
 never live on only one channel.
+
 Verify your download:
 ```
 Windows   Get-FileHash hom3v2official.zip -Algorithm SHA256
 macOS     shasum -a 256 hom3v2official.zip
 Linux     sha256sum hom3v2official.zip
+```
 
 If a hash doesn't match, don't run it. Tell us.
 
